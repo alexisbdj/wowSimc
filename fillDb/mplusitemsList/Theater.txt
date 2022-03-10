@@ -2,30 +2,30 @@
 178811 Grim Codex
 178871 Bloodoath Signet
 178872 Ring of Perpetual Conflict
-178866 Dessia's Decimating Decapitator
-178869 Fleshfused Circle
-178865 Xav's Pike of Authority
-178870 Ritual Bone Band
-178864 Gorebound Predator's Gavel
-178802 Unyielding Combatant's Pauldrons
 178808 Viscera of Coalesced Hatred
+178866 Dessia's Decimating Decapitator
+178870 Ritual Bone Band
+178869 Fleshfused Circle
+178802 Unyielding Combatant's Pauldrons
+178865 Xav's Pike of Authority
+178810 Vial of Spectral Essence
+178789 Fleshcrafter's Knife
+178797 Vanquished Usurper's Footpads
+178864 Gorebound Predator's Gavel
+178798 Grips of Overwhelming Beatings
+178796 Boots of Shuddering Matter
+178868 Deathwalker's Promise
+178801 Fearless Challenger's Leggings
+178805 Girdle of Shattered Dreams
+178799 Amphitheater Stalker's Hood
+178806 Contaminated Gauze Wristwraps
 178867 Barricade of the Endless Empire
 178800 Galvanized Oxxein Legguards
 178863 Gorestained Cleaver
-178789 Fleshcrafter's Knife
-178797 Vanquished Usurper's Footpads
-178805 Girdle of Shattered Dreams
-178810 Vial of Spectral Essence
-178807 Pit Fighter's Wristguards
-178868 Deathwalker's Promise
-178801 Fearless Challenger's Leggings
-178796 Boots of Shuddering Matter
+178804 Fallen Empress's Cord
 178794 Triumphant Combatant's Chainmail
+178807 Pit Fighter's Wristguards
+178793 Abdominal Securing Chestguard
 178795 Vest of Concealed Secrets
 178792 Soulsewn Vestments
-178793 Abdominal Securing Chestguard
-178799 Amphiteeater Stalker's Hood
-178806 Contamined Gauze Wristwraps
 178803 Plague-Licked Amice
-178798 Grips of Overwhelming Beatings
-178804 Fallen Empress's Cord

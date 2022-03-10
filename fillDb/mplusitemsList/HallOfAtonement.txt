@@ -1,23 +1,23 @@
-178829 Nathrian Ferula
 178827 Sin Stained Pendant
+178829 Nathrian Ferula
 178824 Signet of the False Accuser
-178816 Nathrian Usurper's Mask
-178817 Hood of Refracted Shadows
 178826 Sunblood Amethyst
-178812 Wing Commander's Helmet
+178816 Nathrian Usurper's Mask
 178832 Gloves of Haunting Fixation
-178814 Breastplate of Otherwordly Influence
-178831 Slippers of Leavened Station
+178812 Wing Commander's Helmet
 178813 Sinlight Shroud
 178818 Halkias's Towering Pillars
-178828 Nathrian Tabernacle
+178819 Skyterror's Stonehide Leggings
+178814 Breastplate of Otherworldly Influence
+178817 Hood of Refracted Shadows
 178825 Pulsating Stoneheart
-178821 Mantle of Ephemeral Visages
-178833 Stonefiend Shaper's Mitts
-178815 Soaring Decimator's Hauberk
-178820 Pauldrons of Unleashed Pride
+178823 Waistcord of Dark Devotion
+178828 Nathrian Tabernacle
 178830 Shardskin Sabatons
 178834 Stoneguardian's Morningstar
+178831 Slippers of Leavened Station
+178821 Mantle of Ephemeral Visages
+178815 Soaring Decimator's Hauberk
 178822 Cord of the Dark Word
-178822 Waistcord of Dark Devotion
-178819 Skyterror's Stonehide Leggings
+178820 Pauldrons of Unleashed Pride
+178833 Stonefiend Shaper's Mitts

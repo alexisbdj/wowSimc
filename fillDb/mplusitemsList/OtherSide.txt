@@ -4,25 +4,25 @@
 179331 Blood-Spattered Scale
 179355 Death God's Signet
 179330 Zin'khas, Blade of the Fallen God
+179339 Whizblast Walking Stick
 179348 Xy Cartel Crossbow
 179349 Dealer Xy'exa's Cape
-179339 Whizblast Walking Stick
-179344 Far Traveler's Shoulderpads
-179326 Girdle of the soulflayer
-179328 Bloodspiller
-179347 Collector's Pulse Staff
 179353 Harness of Twisted Whims
-179325 Hakkari Revenant's Grips
-179354 Reality-Shatter Vambraces
-179346 Breastplate of Fatal Contrivances
-179345 Spatial Rift Striders
-179352 Primeval Soul's Ankleguards
+179328 Bloodspiller
+179326 Girdle of the Soulflayer
+179344 Far Traveler's Shoulderpads
 179324 Soulfeather Breeches
+179325 Hakkari Revenant's Grips
+179345 Spatial Rift Striders
 179351 Mueh'zala's Hexthread Sarong
-179338 Dynamo Doomstomper
-179343 Sash oof Exquisite Acquisitions
-179335 Manastorm's Magnificient Threads
-179336 Rocket Chicken Handlers
+179343 Sash of Exquisite Acquisitions
+179347 Collector's Pulse Staff
+179354 Reality-Shatter Vambraces
 179322 Windscale Moccasins
 179337 Techno-Coil Legguards
+179352 Primeval Soul's Ankleguards
+179336 Rocket Chicken Handlers
 179340 Supercollider
+179346 Breastplate of Fatal Contrivances
+179338 Dynamo Doomstompers
+179335 Manastorm's Magnificent Threads

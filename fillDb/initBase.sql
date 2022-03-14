@@ -2,7 +2,10 @@ CREATE TABLE Item (
     id INT UNSIGNED PRIMARY KEY,
     name varchar(100) NOT NULL,
     level INT UNSIGNED NOT NULL,
-    isEquippable BOOLEAN NOT NULL
+    isEquippable BOOLEAN NOT NULL,
+    itemClass INT UNSIGNED NOT NULL,
+    itemSubClass INT UNSIGNED NOT NULL,
+    invType varchar(25) NOT NULL
 );
 
 CREATE TABLE Dungeon (
@@ -16,4 +19,3 @@ CREATE TABLE SourceDrop (
     FOREIGN KEY (itemId) REFERENCES Item(id) ON DELETE CASCADE,
     FOREIGN KEY (dungeonName) REFERENCES Dungeon(name) ON DELETE CASCADE
 );
-

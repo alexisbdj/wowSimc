@@ -26,6 +26,8 @@ class ItemInfos:
             self.iclass = ItemClass(getValue(data, 'item_class', raw))
             self.subclass = ItemClass(getValue(data, 'item_subclass', raw))
             self.isEquippable = getValue(data, 'is_equippable', raw)
+            self.invType = getValue(getValue(data, 'inventory_type', raw), 'type', raw)
+
         else:
             raise exception.UnexpectedContentFormat(raw)
         

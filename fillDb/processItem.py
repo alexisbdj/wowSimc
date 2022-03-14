@@ -3,11 +3,14 @@ import mysql.connector
 
 
 def getItemQuery(item: ItemInfos):
-    return "INSERT INTO Item (id, name, level, isEquippable) VALUES ({id}, \"{name}\", {level}, {isEquippable})".format(
+    return "INSERT INTO Item (id, name, level, isEquippable, itemClass, itemSubClass, invType) VALUES ({id}, \"{name}\", {level}, {isEquippable}, {iclass}, {subClass}, \"{invType}\")".format(
         id=item.id,
         name=item.name,
         level=item.level,
-        isEquippable=item.isEquippable
+        isEquippable=item.isEquippable,
+        iclass=item.iclass.id,
+        subClass=item.subclass.id,
+        invType=item.invType,
     )
 
 

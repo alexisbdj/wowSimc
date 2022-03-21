@@ -1,6 +1,6 @@
 use crate::general_parser::get_key_value;
 
-#[derive(PartialEq, Eq)]
+#[derive(PartialEq, Eq, Copy, Clone)]
 pub enum CharacterClass {
     Unknown,
     Warrior,
@@ -50,28 +50,54 @@ impl std::fmt::Display for CharacterClass {
     }
 }
 
-pub struct character_info {
+pub struct CharacterInfo {
     class: CharacterClass,
+    name: String,
+    spec: String,
 }
 
-impl character_info {
+fn get_class_from_name(name: &str) -> CharacterClass
+{
+    for pair in &CLASS_NAMES {
+        let current = pair.0;
+        if  name == current {
+            return pair.1
+        }
+    }
+    CharacterClass::Unknown
+}
+
+impl CharacterInfo {
     pub fn new() -> Self {
-        character_info {
+        CharacterInfo {
             class: CharacterClass::Unknown,
+            name: String::from("unknown"),
+            spec: String::from("unknown"),
+        }
+    }
+
+    fn update_except_class_name(&mut self, key: &str, value: &str)
+    {
+        if key == "spec" {
+            self.spec = String::from(value);
         }
     }
 
     fn update_from_key_value(&mut self, key: &str, value: &str)
     {
-        println!("{}: {}", key, value)
+        match get_class_from_name(key) {
+            CharacterClass::Unknown => {
+                self.update_except_class_name(key, value);
+            },
+            class_type => {
+                self.class = class_type;
+                self.name = String::from(value);
+            }
+        }
     }
     
     pub fn update_from_line(&mut self, line: String) {
-        if line.len() == 0 || line.starts_with("#") {
-            println!("comment found");
-        }
-        else {
-            println!("process: {}", line);
+        if !(line.len() == 0 || line.starts_with("#")) {
             match get_key_value(&line) {
                 Ok(result) => {
                     self.update_from_key_value(result.0, result.1);
@@ -86,6 +112,8 @@ impl character_info {
     }
 
     pub fn dump(&self) {
+        println!("name: {}", self.name);
         println!("class: {}", self.class);
+        println!("spec: {}", self.spec);
     }
 }

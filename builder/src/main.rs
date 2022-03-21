@@ -1,13 +1,11 @@
 mod simc;
 mod general_parser;
 mod database;
+mod process;
 
 fn main() -> std::io::Result<()> {
-    let file = std::fs::File::open("./example.simc")?;
-    simc::parser::parse_from_file(file).dump();
-
-    if let Ok(result) = dotenv::dotenv() {
-        println!("{}", result.to_str().unwrap());
+    if let Ok(_) = dotenv::dotenv() {
+        println!("env updated");
     }
     else {
         eprintln!("env not found");
@@ -15,11 +13,7 @@ fn main() -> std::io::Result<()> {
 
     match database::connect_to_database() {
         Ok(mut conn) => {
-            if let Ok(result) = database::get_all_items(&mut conn) {
-                for item in result {
-                    println!("{}", item);
-                }
-            }
+            process::run(&mut conn)?
         },
         Err(err) => {
             eprintln!("{}", err);

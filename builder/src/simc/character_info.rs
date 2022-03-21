@@ -51,9 +51,9 @@ impl std::fmt::Display for CharacterClass {
 }
 
 pub struct CharacterInfo {
-    class: CharacterClass,
-    name: String,
-    spec: String,
+    pub class: CharacterClass,
+    pub name: String,
+    pub spec: String,
 }
 
 fn get_class_from_name(name: &str) -> CharacterClass
@@ -80,6 +80,7 @@ impl CharacterInfo {
     {
         if key == "spec" {
             self.spec = String::from(value);
+            self.spec = self.spec.replace("\"", "");    //TODO : retirer ça gérer les guillemets dans update_from_line
         }
     }
 

@@ -19,3 +19,15 @@ CREATE TABLE SourceDrop (
     FOREIGN KEY (itemId) REFERENCES Item(id) ON DELETE CASCADE,
     FOREIGN KEY (dungeonName) REFERENCES Dungeon(name) ON DELETE CASCADE
 );
+
+CREATE TABLE ClassEquipment (
+    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    class VARCHAR(25) NOT NULL,
+    spec VARCHAR(25),
+    itemClass INT UNSIGNED NOT NULL,
+    itemSubClass INT UNSIGNED NOT NULL
+);
+
+INSERT INTO ClassEquipment (class, spec, itemClass, itemSubClass) VALUES
+("druid", NULL, 4, 2),
+("druid", "balance", 2, 10);

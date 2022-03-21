@@ -13,3 +13,14 @@ impl std::fmt::Display for Item {
         write!(f, "{} | {}", self.id, self.name)
     }
 }
+
+pub struct ItemClass {
+    pub class: u32,
+    pub sub_class: u32,
+}
+
+impl std::fmt::Display for ItemClass {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{} | {}", self.class, self.sub_class)
+    }
+}

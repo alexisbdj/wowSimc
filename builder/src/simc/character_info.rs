@@ -1,4 +1,4 @@
-use crate::general_parser::get_key_value;
+use crate::general_parser::{get_key_value, trim_quotes};
 
 #[derive(PartialEq, Eq, Copy, Clone)]
 pub enum CharacterClass {
@@ -101,15 +101,13 @@ impl CharacterInfo {
         if !(line.len() == 0 || line.starts_with("#")) {
             match get_key_value(&line) {
                 Ok(result) => {
-                    self.update_from_key_value(result.0, result.1);
+                    self.update_from_key_value(result.0, trim_quotes(result.1));
                 },
                 Err(error) => {
                     eprintln!("ERROR: {}", error);
                 }
             }
         }
-
-
     }
 
     pub fn dump(&self) {

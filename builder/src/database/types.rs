@@ -14,6 +14,7 @@ impl std::fmt::Display for Item {
     }
 }
 
+#[derive(Copy, Clone)]
 pub struct ItemClass {
     pub class: u32,
     pub sub_class: u32,

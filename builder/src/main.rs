@@ -5,7 +5,7 @@ mod process;
 
 fn main() -> std::io::Result<()> {
     if let Ok(_) = dotenv::dotenv() {
-        println!("env updated");
+        // println!("env updated");
     }
     else {
         eprintln!("env not found");

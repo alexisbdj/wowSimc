@@ -1,5 +1,5 @@
 pub struct ItemInfo {
-    id: u32,
-    inv_type: String,
+    pub id: u32,
+    pub inv_type: String,
 }
 

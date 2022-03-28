@@ -21,18 +21,32 @@ pub enum ItemSlot {
 }
 
 pub struct ItemSet {
-    head: EquippedItem,
-    shoulder: EquippedItem,
-    neck: EquippedItem,
-    chest: EquippedItem,
-    waist: EquippedItem,
-    wrist: EquippedItem,
-    hands: EquippedItem,
-    legs: EquippedItem,
-    feet: EquippedItem,
-    finger1: EquippedItem,
-    finger2: EquippedItem,
+    pub head: EquippedItem,
+    pub shoulder: EquippedItem,
+    pub neck: EquippedItem,
+    pub chest: EquippedItem,
+    pub waist: EquippedItem,
+    pub wrist: EquippedItem,
+    pub hands: EquippedItem,
+    pub legs: EquippedItem,
+    pub feet: EquippedItem,
+    pub finger1: EquippedItem,
+    pub finger2: EquippedItem,
 }
+
+static SLOT_LIST: [ItemSlot; 11] = [
+    ItemSlot::Head,
+    ItemSlot::Shoulder,
+    ItemSlot::Neck,
+    ItemSlot::Chest,
+    ItemSlot::Waist,
+    ItemSlot::Wrist,
+    ItemSlot::Hands,
+    ItemSlot::Legs,
+    ItemSlot::Feet,
+    ItemSlot::Finger1,
+    ItemSlot::Finger2,
+];
 
 impl ItemSet {
     pub fn new() -> Self {
@@ -51,7 +65,7 @@ impl ItemSet {
         }
     }
 
-    pub fn get_item_from_slot<'a>(&'a self, slot: ItemSlot) -> &'a EquippedItem {
+    pub fn get_item_from_slot<'a>(&'a self, slot: &ItemSlot) -> &'a EquippedItem {
         match slot {
             ItemSlot::Head => &self.head,
             ItemSlot::Shoulder => &self.shoulder,
@@ -68,7 +82,32 @@ impl ItemSet {
     }
 
     pub fn to_simc_input(&self, set_name: String, profile_name: String) -> String {
-        let mut result = String::new();
+        let mut result = format!("\ncopy=\"{},{}\"\n",
+            set_name,
+            profile_name);
+        for slot in &SLOT_LIST {
+            let slot_name = get_slot_name(slot);
+            if let EquippedItem::Item(item) = self.get_item_from_slot(slot) {
+                result.push_str(&format!("{}=\",id={},ilevel={}\"\n", slot_name, item.id, 262));
+            }
+        }
         result
+    }
+}
+
+fn get_slot_name(slot: &ItemSlot) -> &'static str
+{
+    match slot {
+        ItemSlot::Head => "head",
+        ItemSlot::Shoulder => "shoulder",
+        ItemSlot::Neck => "neck",
+        ItemSlot::Chest => "chest",
+        ItemSlot::Waist => "waist",
+        ItemSlot::Wrist => "wrist",
+        ItemSlot::Hands => "hands",
+        ItemSlot::Legs => "legs",
+        ItemSlot::Feet => "feet",
+        ItemSlot::Finger1 => "finger1",
+        ItemSlot::Finger2 => "finger2",
     }
 }

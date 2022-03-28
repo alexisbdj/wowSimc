@@ -12,7 +12,7 @@ pub fn run(mut conn: &mut mysql::PooledConn) -> std::io::Result<()>
     if let Ok(result) = database::get_equippable_items(&mut conn, String::from(character.class.get_name()), Some(character.spec)) {
         match database::items::by_filter_list(&mut conn, &vec!(ItemFilter::ByClassList(result), ItemFilter::ByInvType(String::from("FINGER")))) {
             Ok(result) => {
-                scripter::fast_droptimizer(result, &character.name);
+                scripter::full_dungeon_set(result, &character.name);
             },
             Err(error) => {
                 eprintln!("{}", error);

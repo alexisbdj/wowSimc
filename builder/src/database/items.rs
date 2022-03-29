@@ -2,6 +2,12 @@ use mysql::*;
 use mysql::prelude::Queryable;
 use crate::database::types;
 
+
+/// filters used to build sql data
+/// 
+/// - byClass returns all items from item and item class id (and optionaly subClass)
+/// - byClassList returns all items from class/subclass contained in the list
+/// - byInvType returns all items from invType (ex: FINGER)
 pub enum ItemFilter {
     ByClass(u32, Option<u32>),
     ByClassList(Vec<types::ItemClass>),
@@ -9,6 +15,7 @@ pub enum ItemFilter {
 }
 
 impl ItemFilter {
+    /// convert ItemFilter to SQL statement
     pub fn get_filter(&self) -> String {
         match self {
             ItemFilter::ByClass(item_class, sub_class) => {
@@ -42,6 +49,7 @@ impl ItemFilter {
     }
 }
 
+/// get all items using a list of ItemFilter
 pub fn by_filter_list(conn: &mut mysql::PooledConn, filter_list: &Vec<ItemFilter>) -> Result<Vec<types::Item>>
 {
     let mut filter = String::new();
@@ -60,6 +68,7 @@ pub fn by_filter_list(conn: &mut mysql::PooledConn, filter_list: &Vec<ItemFilter
     get_items(conn, Some(filter))
 }
 
+/// shortcut for ItemFilter::ByClassList
 #[allow(dead_code)]
 pub fn by_class_list(conn: &mut mysql::PooledConn, class_list: &Vec<types::ItemClass>) -> Result<Vec<types::Item>>
 {
@@ -67,6 +76,7 @@ pub fn by_class_list(conn: &mut mysql::PooledConn, class_list: &Vec<types::ItemC
     get_items(conn, Some(filter))
 }
 
+/// shortcut for ItemFilter::ByClass
 #[allow(dead_code)]
 pub fn by_class(conn: &mut mysql::PooledConn, item_class: u32, sub_class: Option<u32>) -> Result<Vec<types::Item>>
 {
@@ -74,12 +84,14 @@ pub fn by_class(conn: &mut mysql::PooledConn, item_class: u32, sub_class: Option
     get_items(conn, Some(filter))
 }
 
+/// no filter, simply SELECT * without condition
 #[allow(dead_code)]
 pub fn all(conn: &mut mysql::PooledConn) -> Result<Vec<types::Item>>
 {
     get_items(conn, None)
 }
 
+/// generic sql request to Item list
 fn get_items(conn: &mut mysql::PooledConn, filter: Option<String>) -> Result<Vec<types::Item>>
 {
     let query = match filter {

@@ -1,6 +1,7 @@
 use std::io::{BufRead};
 use crate::simc::character_info::*;
 
+/// returns CharacterInfo from simc addon output
 pub fn parse_from_file(file: std::fs::File) -> CharacterInfo {
     let lines = std::io::BufReader::new(file).lines();
     let mut result = CharacterInfo::new();

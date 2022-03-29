@@ -1,5 +1,6 @@
 use mysql::*;
 
+/// get sql connection builder from env variables
 pub fn get_conn_builder() -> std::result::Result<OptsBuilder, Box<dyn std::error::Error>> {
     let mut builder = OptsBuilder::new();
     builder = builder.ip_or_hostname(Some(std::env::var("DB_HOST")?));

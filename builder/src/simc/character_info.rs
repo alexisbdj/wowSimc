@@ -1,5 +1,6 @@
 use crate::general_parser::{get_key_value, trim_quotes};
 
+/// enum containing all playable class
 #[derive(PartialEq, Eq, Copy, Clone)]
 pub enum CharacterClass {
     Unknown,
@@ -17,6 +18,7 @@ pub enum CharacterClass {
     DeathKnight,
 }
 
+/// list of playable class and their simc usage name
 static CLASS_NAMES: [(&'static str, CharacterClass); 12] = [
     ("death_knight", CharacterClass::DeathKnight),
     ("demon_hunter", CharacterClass::DemonHunter),
@@ -33,6 +35,7 @@ static CLASS_NAMES: [(&'static str, CharacterClass); 12] = [
 ];
 
 impl CharacterClass {
+    /// get current class usage name
     pub fn get_name(&self) -> &'static str {
         for pair in &CLASS_NAMES {
             let current = &pair.1;
@@ -56,6 +59,7 @@ pub struct CharacterInfo {
     pub spec: String,
 }
 
+/// convert name into CharacterClass
 fn get_class_from_name(name: &str) -> CharacterClass
 {
     for pair in &CLASS_NAMES {
@@ -97,6 +101,7 @@ impl CharacterInfo {
         }
     }
     
+    /// read simc input line to update current character info
     pub fn update_from_line(&mut self, line: String) {
         if !(line.len() == 0 || line.starts_with("#")) {
             match get_key_value(&line) {

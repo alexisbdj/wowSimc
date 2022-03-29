@@ -1,3 +1,4 @@
+/// contains Item data
 pub struct Item {
     pub id: u32,
     pub name: String,
@@ -14,6 +15,7 @@ impl std::fmt::Display for Item {
     }
 }
 
+/// represent a class and a subclass
 #[derive(Copy, Clone)]
 pub struct ItemClass {
     pub class: u32,

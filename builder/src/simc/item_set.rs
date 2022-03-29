@@ -6,6 +6,7 @@ pub enum EquippedItem {
     Locked,
 }
 
+/// each item slots
 pub enum ItemSlot {
     Head,
     Shoulder,
@@ -20,6 +21,9 @@ pub enum ItemSlot {
     Finger2,
 }
 
+/// contains item set
+/// 
+/// can be converted into simc input
 pub struct ItemSet {
     pub head: EquippedItem,
     pub shoulder: EquippedItem,
@@ -34,6 +38,7 @@ pub struct ItemSet {
     pub finger2: EquippedItem,
 }
 
+/// list that contains all slots to be iterated on
 static SLOT_LIST: [ItemSlot; 11] = [
     ItemSlot::Head,
     ItemSlot::Shoulder,
@@ -65,6 +70,7 @@ impl ItemSet {
         }
     }
 
+    /// get pointer to the item at the specified slot
     pub fn get_item_from_slot<'a>(&'a self, slot: &ItemSlot) -> &'a EquippedItem {
         match slot {
             ItemSlot::Head => &self.head,
@@ -81,6 +87,7 @@ impl ItemSet {
         }
     }
 
+    /// convert this set into simc input using copy syntax
     pub fn to_simc_input(&self, set_name: String, profile_name: String) -> String {
         let mut result = format!("\ncopy=\"{},{}\"\n",
             set_name,
@@ -95,6 +102,7 @@ impl ItemSet {
     }
 }
 
+/// get simc usage slot name
 fn get_slot_name(slot: &ItemSlot) -> &'static str
 {
     match slot {

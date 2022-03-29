@@ -1,6 +1,7 @@
 use crate::database::types::Item;
 use crate::simc::item_set;
 
+//use copy syntax to create profile with only one new item
 fn single_item_profile(item: &Item, name: &String, inv_type: &String, precision: Option<&String>) -> String
 {
     let mut result = String::new();
@@ -20,16 +21,17 @@ fn single_item_profile(item: &Item, name: &String, inv_type: &String, precision:
     return result;
 }
 
+//quickly get first finger from list
 fn get_finger<'a>(items: &'a Vec<Item>) -> Option<&'a Item> {
     for i in items {
         if i.inv_type == "FINGER" {
             return Some(i);
         }
     }
-
     None
 }
 
+/// test each item separately
 #[allow(dead_code)]
 pub fn fast_droptimizer(items: Vec<Item>, name: &String) {
     let mut result = String::new();
@@ -46,6 +48,7 @@ pub fn fast_droptimizer(items: Vec<Item>, name: &String) {
     println!("{}", result);
 }
 
+/// find best possible dungeon set tesing all possibilities
 #[allow(dead_code)]
 pub fn full_dungeon_set(items: Vec<Item>, name: &String) {
     let mut iset = item_set::ItemSet::new();

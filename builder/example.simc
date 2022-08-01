@@ -1,0 +1,33 @@
+# Raidbots-generated SimC input for Armory character EU Elune Aliy
+# On 2022-03-20T00:39:21.164Z
+
+druid="Aliy"
+level="60"
+race="night_elf"
+region="eu"
+server="elune"
+role="caster"
+talents="1332332"
+spec="balance"
+
+covenant="venthyr"
+renown="80"
+# soulbind=general_draven:3,340159/254:10:1/319982/269:10:1/332755/283:10:1/271:10:1/332753/270:10:1/352415/272:10:1/352417
+# soulbind=nadjia_the_mistblade:8,331586/280:10:1/331576/258:9:1/331579/271:10:1/273:10:1/331582/265:10:1/352405/257:10:1/352373
+soulbind="theotar_the_mad_duke:9,336239/258:9:1/336147/280:10:1/336184/271:10:1/259:10:1/319983/262:10:1/351748/283:10:1/351750"
+
+back=",id=189815,bonus_id=7188/8118/8138/6652/1511/6646,enchant_id=6202,context=5"
+chest=",id=178744,bonus_id=7593/7359/6652/1566/6646,enchant_id=6230,context=35"
+feet=",id=189798,bonus_id=7189/8133/8137/6652/1498/6646,context=3"
+finger1=",id=179355,bonus_id=7622/7359/6652/7575/1566/6646,enchant_id=6168,context=35"
+finger2=",id=178926,bonus_id=7088/7882/8156/6649/6648/1588/6935,gem_id=173130,enchant_id=6168,context=69"
+hands=",id=178757,bonus_id=7608/7359/6652/1566/6646,enchant_id=6205,context=35"
+head=",id=178691,bonus_id=7766/8136/8116/7359/6652/7579/1573/6646,context=33"
+legs=",id=179324,bonus_id=7772/8136/8116/7359/6652/1592/6646,context=35"
+main_hand=",id=185822,bonus_id=7822/7359/6652/1576/6646,enchant_id=6229,context=33"
+neck=",id=178707,bonus_id=7799/7359/6652/7579/1589/6646,context=35"
+shoulder=",id=189784,bonus_id=7188/8118/8117/6652/1511/6646,context=5"
+trinket1=",id=188270,bonus_id=7188/6652/1511/6646,context=5"
+trinket2=",id=179350,bonus_id=7608/7359/6652/1566/6646,context=35"
+waist=",id=178699,bonus_id=7781/8136/8137/7359/6652/7578/1576/6646,context=16"
+wrist=",id=178847,bonus_id=7794/8136/8138/7359/6652/7579/1573/6646,enchant_id=6220,context=33"

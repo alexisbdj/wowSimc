@@ -1,0 +1,446 @@
+# Raidbots-generated SimC input for Armory character EU Elune Aliy
+# On 2022-03-20T00:39:21.164Z
+
+druid="Aliy"
+level="60"
+race="night_elf"
+region="eu"
+server="elune"
+role="caster"
+talents="1332332"
+spec="balance"
+
+covenant="venthyr"
+renown="80"
+# soulbind=general_draven:3,340159/254:10:1/319982/269:10:1/332755/283:10:1/271:10:1/332753/270:10:1/352415/272:10:1/352417
+# soulbind=nadjia_the_mistblade:8,331586/280:10:1/331576/258:9:1/331579/271:10:1/273:10:1/331582/265:10:1/352405/257:10:1/352373
+soulbind="theotar_the_mad_duke:9,336239/258:9:1/336147/280:10:1/336184/271:10:1/259:10:1/319983/262:10:1/351748/283:10:1/351750"
+
+back=",id=189815,bonus_id=7188/8118/8138/6652/1511/6646,enchant_id=6202,context=5"
+chest=",id=178744,bonus_id=7593/7359/6652/1566/6646,enchant_id=6230,context=35"
+feet=",id=189798,bonus_id=7189/8133/8137/6652/1498/6646,context=3"
+finger1=",id=179355,bonus_id=7622/7359/6652/7575/1566/6646,enchant_id=6168,context=35"
+finger2=",id=178926,bonus_id=7088/7882/8156/6649/6648/1588/6935,gem_id=173130,enchant_id=6168,context=69"
+hands=",id=178757,bonus_id=7608/7359/6652/1566/6646,enchant_id=6205,context=35"
+head=",id=178691,bonus_id=7766/8136/8116/7359/6652/7579/1573/6646,context=33"
+legs=",id=179324,bonus_id=7772/8136/8116/7359/6652/1592/6646,context=35"
+main_hand=",id=185822,bonus_id=7822/7359/6652/1576/6646,enchant_id=6229,context=33"
+neck=",id=178707,bonus_id=7799/7359/6652/7579/1589/6646,context=35"
+shoulder=",id=189784,bonus_id=7188/8118/8117/6652/1511/6646,context=5"
+trinket1=",id=188270,bonus_id=7188/6652/1511/6646,context=5"
+trinket2=",id=179350,bonus_id=7608/7359/6652/1566/6646,context=35"
+waist=",id=178699,bonus_id=7781/8136/8137/7359/6652/7578/1576/6646,context=16"
+wrist=",id=178847,bonus_id=7794/8136/8138/7359/6652/7579/1573/6646,enchant_id=6220,context=33"
+
+copy="Hood of the Hidden Path,Aliy"
+head=",id=178691,ilevel=262"
+
+copy="Rainshadow Hauberk(eternal_stats),Aliy"
+chest=",id=178698,ilevel=262,enchant=eternal_stats"
+
+copy="Sapgorger Belt,Aliy"
+waist=",id=178699,ilevel=262"
+
+copy="Bands of the Undergrowth,Aliy"
+wrist=",id=178702,ilevel=262"
+
+copy="Viscera-Stitched Footpads,Aliy"
+feet=",id=178731,ilevel=262"
+
+copy="Stitchflesh's Misplaced Signet(finger1 | 16haste),Aliy"
+finger1=",id=178736,ilevel=262,enchant=16haste"
+
+copy="Stitchflesh's Misplaced Signet(finger1 | 16mastery),Aliy"
+finger1=",id=178736,ilevel=262,enchant=16mastery"
+
+copy="Stitchflesh's Misplaced Signet(finger1 | 16crit),Aliy"
+finger1=",id=178736,ilevel=262,enchant=16crit"
+
+copy="Stitchflesh's Misplaced Signet(finger1 | 16vers),Aliy"
+finger1=",id=178736,ilevel=262,enchant=16vers"
+
+copy="Stitchflesh's Misplaced Signet(finger2 | 16haste),Aliy"
+finger2=",id=178736,ilevel=262,enchant=16haste"
+
+copy="Stitchflesh's Misplaced Signet(finger2 | 16mastery),Aliy"
+finger2=",id=178736,ilevel=262,enchant=16mastery"
+
+copy="Stitchflesh's Misplaced Signet(finger2 | 16crit),Aliy"
+finger2=",id=178736,ilevel=262,enchant=16crit"
+
+copy="Stitchflesh's Misplaced Signet(finger2 | 16vers),Aliy"
+finger2=",id=178736,ilevel=262,enchant=16vers"
+
+copy="Risen Monstrosity Cuffs,Aliy"
+wrist=",id=178741,ilevel=262"
+
+copy="Freshly Embalmed Jerkin(eternal_stats),Aliy"
+chest=",id=178744,ilevel=262,enchant=eternal_stats"
+
+copy="Gloves of Obscure Rituals,Aliy"
+hands=",id=178757,ilevel=262"
+
+copy="Digested Interrogator's Gaze,Aliy"
+head=",id=178760,ilevel=262"
+
+copy="Malodorous Gristle-Sown Spaulders,Aliy"
+shoulder=",id=178763,ilevel=262"
+
+copy="Undying Chill Shoulderpads,Aliy"
+shoulder=",id=178779,ilevel=262"
+
+copy="Ritual Commander's Ring(finger1 | 16haste),Aliy"
+finger1=",id=178781,ilevel=262,enchant=16haste"
+
+copy="Ritual Commander's Ring(finger1 | 16mastery),Aliy"
+finger1=",id=178781,ilevel=262,enchant=16mastery"
+
+copy="Ritual Commander's Ring(finger1 | 16crit),Aliy"
+finger1=",id=178781,ilevel=262,enchant=16crit"
+
+copy="Ritual Commander's Ring(finger1 | 16vers),Aliy"
+finger1=",id=178781,ilevel=262,enchant=16vers"
+
+copy="Ritual Commander's Ring(finger2 | 16haste),Aliy"
+finger2=",id=178781,ilevel=262,enchant=16haste"
+
+copy="Ritual Commander's Ring(finger2 | 16mastery),Aliy"
+finger2=",id=178781,ilevel=262,enchant=16mastery"
+
+copy="Ritual Commander's Ring(finger2 | 16crit),Aliy"
+finger2=",id=178781,ilevel=262,enchant=16crit"
+
+copy="Ritual Commander's Ring(finger2 | 16vers),Aliy"
+finger2=",id=178781,ilevel=262,enchant=16vers"
+
+copy="Vest of Concealed Secrets(eternal_stats),Aliy"
+chest=",id=178795,ilevel=262,enchant=eternal_stats"
+
+copy="Vanquished Usurper's Footpads,Aliy"
+feet=",id=178797,ilevel=262"
+
+copy="Fearless Challenger's Leggings,Aliy"
+legs=",id=178801,ilevel=262"
+
+copy="Girdle of Shattered Dreams,Aliy"
+waist=",id=178805,ilevel=262"
+
+copy="Hood of Refracted Shadows,Aliy"
+head=",id=178817,ilevel=262"
+
+copy="Skyterror's Stonehide Leggings,Aliy"
+legs=",id=178819,ilevel=262"
+
+copy="Waistcord of Dark Devotion,Aliy"
+waist=",id=178823,ilevel=262"
+
+copy="Signet of the False Accuser(finger1 | 16haste),Aliy"
+finger1=",id=178824,ilevel=262,enchant=16haste"
+
+copy="Signet of the False Accuser(finger1 | 16mastery),Aliy"
+finger1=",id=178824,ilevel=262,enchant=16mastery"
+
+copy="Signet of the False Accuser(finger1 | 16crit),Aliy"
+finger1=",id=178824,ilevel=262,enchant=16crit"
+
+copy="Signet of the False Accuser(finger1 | 16vers),Aliy"
+finger1=",id=178824,ilevel=262,enchant=16vers"
+
+copy="Signet of the False Accuser(finger2 | 16haste),Aliy"
+finger2=",id=178824,ilevel=262,enchant=16haste"
+
+copy="Signet of the False Accuser(finger2 | 16mastery),Aliy"
+finger2=",id=178824,ilevel=262,enchant=16mastery"
+
+copy="Signet of the False Accuser(finger2 | 16crit),Aliy"
+finger2=",id=178824,ilevel=262,enchant=16crit"
+
+copy="Signet of the False Accuser(finger2 | 16vers),Aliy"
+finger2=",id=178824,ilevel=262,enchant=16vers"
+
+copy="Gloves of Haunting Fixation,Aliy"
+hands=",id=178832,ilevel=262"
+
+copy="Anima-Splattered Hide(eternal_stats),Aliy"
+chest=",id=178835,ilevel=262,enchant=eternal_stats"
+
+copy="Sinsoaked Waders,Aliy"
+feet=",id=178837,ilevel=262"
+
+copy="Radiant Light Binders,Aliy"
+wrist=",id=178847,ilevel=262"
+
+copy="Entwined Gorger Tendril(finger1 | 16haste),Aliy"
+finger1=",id=178848,ilevel=262,enchant=16haste"
+
+copy="Entwined Gorger Tendril(finger1 | 16mastery),Aliy"
+finger1=",id=178848,ilevel=262,enchant=16mastery"
+
+copy="Entwined Gorger Tendril(finger1 | 16crit),Aliy"
+finger1=",id=178848,ilevel=262,enchant=16crit"
+
+copy="Entwined Gorger Tendril(finger1 | 16vers),Aliy"
+finger1=",id=178848,ilevel=262,enchant=16vers"
+
+copy="Entwined Gorger Tendril(finger2 | 16haste),Aliy"
+finger2=",id=178848,ilevel=262,enchant=16haste"
+
+copy="Entwined Gorger Tendril(finger2 | 16mastery),Aliy"
+finger2=",id=178848,ilevel=262,enchant=16mastery"
+
+copy="Entwined Gorger Tendril(finger2 | 16crit),Aliy"
+finger2=",id=178848,ilevel=262,enchant=16crit"
+
+copy="Entwined Gorger Tendril(finger2 | 16vers),Aliy"
+finger2=",id=178848,ilevel=262,enchant=16vers"
+
+copy="Wicked Bladewing Pauldrons,Aliy"
+shoulder=",id=178858,ilevel=262"
+
+copy="Fleshfused Circle(finger1 | 16haste),Aliy"
+finger1=",id=178869,ilevel=262,enchant=16haste"
+
+copy="Fleshfused Circle(finger1 | 16mastery),Aliy"
+finger1=",id=178869,ilevel=262,enchant=16mastery"
+
+copy="Fleshfused Circle(finger1 | 16crit),Aliy"
+finger1=",id=178869,ilevel=262,enchant=16crit"
+
+copy="Fleshfused Circle(finger1 | 16vers),Aliy"
+finger1=",id=178869,ilevel=262,enchant=16vers"
+
+copy="Fleshfused Circle(finger2 | 16haste),Aliy"
+finger2=",id=178869,ilevel=262,enchant=16haste"
+
+copy="Fleshfused Circle(finger2 | 16mastery),Aliy"
+finger2=",id=178869,ilevel=262,enchant=16mastery"
+
+copy="Fleshfused Circle(finger2 | 16crit),Aliy"
+finger2=",id=178869,ilevel=262,enchant=16crit"
+
+copy="Fleshfused Circle(finger2 | 16vers),Aliy"
+finger2=",id=178869,ilevel=262,enchant=16vers"
+
+copy="Ritual Bone Band(finger1 | 16haste),Aliy"
+finger1=",id=178870,ilevel=262,enchant=16haste"
+
+copy="Ritual Bone Band(finger1 | 16mastery),Aliy"
+finger1=",id=178870,ilevel=262,enchant=16mastery"
+
+copy="Ritual Bone Band(finger1 | 16crit),Aliy"
+finger1=",id=178870,ilevel=262,enchant=16crit"
+
+copy="Ritual Bone Band(finger1 | 16vers),Aliy"
+finger1=",id=178870,ilevel=262,enchant=16vers"
+
+copy="Ritual Bone Band(finger2 | 16haste),Aliy"
+finger2=",id=178870,ilevel=262,enchant=16haste"
+
+copy="Ritual Bone Band(finger2 | 16mastery),Aliy"
+finger2=",id=178870,ilevel=262,enchant=16mastery"
+
+copy="Ritual Bone Band(finger2 | 16crit),Aliy"
+finger2=",id=178870,ilevel=262,enchant=16crit"
+
+copy="Ritual Bone Band(finger2 | 16vers),Aliy"
+finger2=",id=178870,ilevel=262,enchant=16vers"
+
+copy="Bloodoath Signet(finger1 | 16haste),Aliy"
+finger1=",id=178871,ilevel=262,enchant=16haste"
+
+copy="Bloodoath Signet(finger1 | 16mastery),Aliy"
+finger1=",id=178871,ilevel=262,enchant=16mastery"
+
+copy="Bloodoath Signet(finger1 | 16crit),Aliy"
+finger1=",id=178871,ilevel=262,enchant=16crit"
+
+copy="Bloodoath Signet(finger1 | 16vers),Aliy"
+finger1=",id=178871,ilevel=262,enchant=16vers"
+
+copy="Bloodoath Signet(finger2 | 16haste),Aliy"
+finger2=",id=178871,ilevel=262,enchant=16haste"
+
+copy="Bloodoath Signet(finger2 | 16mastery),Aliy"
+finger2=",id=178871,ilevel=262,enchant=16mastery"
+
+copy="Bloodoath Signet(finger2 | 16crit),Aliy"
+finger2=",id=178871,ilevel=262,enchant=16crit"
+
+copy="Bloodoath Signet(finger2 | 16vers),Aliy"
+finger2=",id=178871,ilevel=262,enchant=16vers"
+
+copy="Ring of Perpetual Conflict(finger1 | 16haste),Aliy"
+finger1=",id=178872,ilevel=262,enchant=16haste"
+
+copy="Ring of Perpetual Conflict(finger1 | 16mastery),Aliy"
+finger1=",id=178872,ilevel=262,enchant=16mastery"
+
+copy="Ring of Perpetual Conflict(finger1 | 16crit),Aliy"
+finger1=",id=178872,ilevel=262,enchant=16crit"
+
+copy="Ring of Perpetual Conflict(finger1 | 16vers),Aliy"
+finger1=",id=178872,ilevel=262,enchant=16vers"
+
+copy="Ring of Perpetual Conflict(finger2 | 16haste),Aliy"
+finger2=",id=178872,ilevel=262,enchant=16haste"
+
+copy="Ring of Perpetual Conflict(finger2 | 16mastery),Aliy"
+finger2=",id=178872,ilevel=262,enchant=16mastery"
+
+copy="Ring of Perpetual Conflict(finger2 | 16crit),Aliy"
+finger2=",id=178872,ilevel=262,enchant=16crit"
+
+copy="Ring of Perpetual Conflict(finger2 | 16vers),Aliy"
+finger2=",id=178872,ilevel=262,enchant=16vers"
+
+copy="Arachnid Cipher Ring(finger1 | 16haste),Aliy"
+finger1=",id=178933,ilevel=262,enchant=16haste"
+
+copy="Arachnid Cipher Ring(finger1 | 16mastery),Aliy"
+finger1=",id=178933,ilevel=262,enchant=16mastery"
+
+copy="Arachnid Cipher Ring(finger1 | 16crit),Aliy"
+finger1=",id=178933,ilevel=262,enchant=16crit"
+
+copy="Arachnid Cipher Ring(finger1 | 16vers),Aliy"
+finger1=",id=178933,ilevel=262,enchant=16vers"
+
+copy="Arachnid Cipher Ring(finger2 | 16haste),Aliy"
+finger2=",id=178933,ilevel=262,enchant=16haste"
+
+copy="Arachnid Cipher Ring(finger2 | 16mastery),Aliy"
+finger2=",id=178933,ilevel=262,enchant=16mastery"
+
+copy="Arachnid Cipher Ring(finger2 | 16crit),Aliy"
+finger2=",id=178933,ilevel=262,enchant=16crit"
+
+copy="Arachnid Cipher Ring(finger2 | 16vers),Aliy"
+finger2=",id=178933,ilevel=262,enchant=16vers"
+
+copy="Fastened Venombarb Binds,Aliy"
+wrist=",id=178934,ilevel=262"
+
+copy="Soulfeather Breeches,Aliy"
+legs=",id=179324,ilevel=262"
+
+copy="Rocket Chicken Handlers,Aliy"
+hands=",id=179336,ilevel=262"
+
+copy="Far Traveler's Shoulderpads,Aliy"
+shoulder=",id=179344,ilevel=262"
+
+copy="Primeval Soul's Ankleguards,Aliy"
+feet=",id=179352,ilevel=262"
+
+copy="Death God's Signet(finger1 | 16haste),Aliy"
+finger1=",id=179355,ilevel=262,enchant=16haste"
+
+copy="Death God's Signet(finger1 | 16mastery),Aliy"
+finger1=",id=179355,ilevel=262,enchant=16mastery"
+
+copy="Death God's Signet(finger1 | 16crit),Aliy"
+finger1=",id=179355,ilevel=262,enchant=16crit"
+
+copy="Death God's Signet(finger1 | 16vers),Aliy"
+finger1=",id=179355,ilevel=262,enchant=16vers"
+
+copy="Death God's Signet(finger2 | 16haste),Aliy"
+finger2=",id=179355,ilevel=262,enchant=16haste"
+
+copy="Death God's Signet(finger2 | 16mastery),Aliy"
+finger2=",id=179355,ilevel=262,enchant=16mastery"
+
+copy="Death God's Signet(finger2 | 16crit),Aliy"
+finger2=",id=179355,ilevel=262,enchant=16crit"
+
+copy="Death God's Signet(finger2 | 16vers),Aliy"
+finger2=",id=179355,ilevel=262,enchant=16vers"
+
+copy="Winged Hunters' Gloves,Aliy"
+hands=",id=180103,ilevel=262"
+
+copy="Vicious Surge Faceguard,Aliy"
+head=",id=180106,ilevel=262"
+
+copy="Abyssal Disharmony Breeches,Aliy"
+legs=",id=180108,ilevel=262"
+
+copy="Shadowhirl Waistwrap,Aliy"
+waist=",id=180111,ilevel=262"
+
+copy="So'azmi's Fractal Vest(eternal_stats),Aliy"
+chest=",id=185786,ilevel=262,enchant=eternal_stats"
+
+copy="Treads of Titanic Deconversion,Aliy"
+feet=",id=185790,ilevel=262"
+
+copy="Knuckle-Dusting Handwraps,Aliy"
+hands=",id=185791,ilevel=262"
+
+copy="Rakishly Tipped Tricorne,Aliy"
+head=",id=185797,ilevel=262"
+
+copy="Anomalous Starlit Breeches,Aliy"
+legs=",id=185801,ilevel=262"
+
+copy="Breakbeat Shoulderguards,Aliy"
+shoulder=",id=185802,ilevel=262"
+
+copy="Venza's Powderbelt,Aliy"
+waist=",id=185809,ilevel=262"
+
+copy="Signet of Collapsing Stars(finger1 | 16haste),Aliy"
+finger1=",id=185813,ilevel=262,enchant=16haste"
+
+copy="Signet of Collapsing Stars(finger1 | 16mastery),Aliy"
+finger1=",id=185813,ilevel=262,enchant=16mastery"
+
+copy="Signet of Collapsing Stars(finger1 | 16crit),Aliy"
+finger1=",id=185813,ilevel=262,enchant=16crit"
+
+copy="Signet of Collapsing Stars(finger1 | 16vers),Aliy"
+finger1=",id=185813,ilevel=262,enchant=16vers"
+
+copy="Signet of Collapsing Stars(finger2 | 16haste),Aliy"
+finger2=",id=185813,ilevel=262,enchant=16haste"
+
+copy="Signet of Collapsing Stars(finger2 | 16mastery),Aliy"
+finger2=",id=185813,ilevel=262,enchant=16mastery"
+
+copy="Signet of Collapsing Stars(finger2 | 16crit),Aliy"
+finger2=",id=185813,ilevel=262,enchant=16crit"
+
+copy="Signet of Collapsing Stars(finger2 | 16vers),Aliy"
+finger2=",id=185813,ilevel=262,enchant=16vers"
+
+copy="Bracers of Autonomous Classification,Aliy"
+wrist=",id=185817,ilevel=262"
+
+copy="Seal of the Panoply(finger1 | 16haste),Aliy"
+finger1=",id=185840,ilevel=262,enchant=16haste"
+
+copy="Seal of the Panoply(finger1 | 16mastery),Aliy"
+finger1=",id=185840,ilevel=262,enchant=16mastery"
+
+copy="Seal of the Panoply(finger1 | 16crit),Aliy"
+finger1=",id=185840,ilevel=262,enchant=16crit"
+
+copy="Seal of the Panoply(finger1 | 16vers),Aliy"
+finger1=",id=185840,ilevel=262,enchant=16vers"
+
+copy="Seal of the Panoply(finger2 | 16haste),Aliy"
+finger2=",id=185840,ilevel=262,enchant=16haste"
+
+copy="Seal of the Panoply(finger2 | 16mastery),Aliy"
+finger2=",id=185840,ilevel=262,enchant=16mastery"
+
+copy="Seal of the Panoply(finger2 | 16crit),Aliy"
+finger2=",id=185840,ilevel=262,enchant=16crit"
+
+copy="Seal of the Panoply(finger2 | 16vers),Aliy"
+finger2=",id=185840,ilevel=262,enchant=16vers"
+
+html=result.html
+json2=result.json
+
+iterations=100

@@ -119,3 +119,21 @@ fn get_slot_name(slot: &ItemSlot) -> &'static str
         ItemSlot::Finger2 => "finger2",
     }
 }
+
+pub fn get_slot_from_name(name: &String) -> ItemSlot
+{
+    match name.as_str() {
+        "head" => ItemSlot::Head,
+        "shoulder" => ItemSlot::Shoulder,
+        "neck" => ItemSlot::Neck,
+        "chest" => ItemSlot::Chest,
+        "waist" => ItemSlot::Waist,
+        "wrist" => ItemSlot::Wrist,
+        "hands" => ItemSlot::Hands,
+        "legs" => ItemSlot::Legs,
+        "feet" => ItemSlot::Feet,
+        "finger1" => ItemSlot::Finger1,
+        "finger2" => ItemSlot::Finger2,
+        name => panic!("get_slot_from_name: go unexpected slot name: {}", name)
+    }
+}
